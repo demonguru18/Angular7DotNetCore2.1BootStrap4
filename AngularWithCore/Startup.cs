@@ -62,7 +62,10 @@ namespace AngularWithCore
 
                 if (env.IsDevelopment())
                 {
+                    // Uncommet this - To Run Project on IIS
+                    //spa.UseProxyToSpaDevelopmentServer("http://localhost:4200");
                     spa.UseAngularCliServer(npmScript: "start");
+                    
                 }
             });
         }
